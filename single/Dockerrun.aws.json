@@ -1,0 +1,19 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "glot/docker-run:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": 8088,
+      "HostPort": 8088
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/var/run/docker.sock",
+      "ContainerDirectory": "/var/run/docker.sock"
+    }
+  ]
+}
