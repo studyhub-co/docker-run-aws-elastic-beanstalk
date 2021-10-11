@@ -6,5 +6,7 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock"
     ports:
       - "8088:8088"
+    env_file:
+      - .env
     # environment: # set in EBS ENV
     #   API_ACCESS_TOKEN: replace-with-deploy
