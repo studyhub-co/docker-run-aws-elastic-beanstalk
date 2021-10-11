@@ -31,11 +31,6 @@
           "containerPath": "/var/run/docker.sock"
         }        
       ]
-    },
-    {
-      "name": "create-react-app",
-      "image": "vermusl/create-react-app",
-      "essential": true
     }
   ]
 }

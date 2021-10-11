@@ -12,12 +12,6 @@
     {
       "name": "docker-run",
       "image": "glot/docker-run:latest",
-      "environment": [
-        {
-          "name": "API_ACCESS_TOKEN",
-          "value": "replace-with-deploy"
-        }
-      ],
       "essential": true,
       "portMappings": [
         {
