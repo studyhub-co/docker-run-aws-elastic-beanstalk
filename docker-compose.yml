@@ -16,10 +16,10 @@ services:
     ports:
       - 5672:5672
       - 15672:15672
-    # environment: # set in EBS ENV
-    #   RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
-    #   RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
-    #   RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_DEFAULT_VHOST}
+    environment: # set in EBS ENV
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
+      RABBITMQ_DEFAULT_VHOST: '${RABBITMQ_DEFAULT_VHOST}'
     volumes:
       - /var/lib/rabbitmq/:/var/lib/rabbitmq/
       - /var/log/rabbitmq/:/var/log/rabbitmq/
