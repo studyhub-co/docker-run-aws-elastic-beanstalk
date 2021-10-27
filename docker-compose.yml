@@ -21,5 +21,5 @@ services:
     #   RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
     #   RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_DEFAULT_VHOST}
     volumes:
-      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
-      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+      - /var/lib/rabbitmq/:/var/lib/rabbitmq/
+      - /var/log/rabbitmq/:/var/log/rabbitmq/
