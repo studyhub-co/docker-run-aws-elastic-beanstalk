@@ -5,7 +5,7 @@ SWAP_MEGABYTES=1200
 
 if [ -f $SWAPFILE ]; then
 	echo "Swapfile $SWAPFILE found, assuming already setup"
-	/sbin/swapon $SWAPFILE
+	/sbin/swapon -s $SWAPFILE
 	exit;
 fi
 
